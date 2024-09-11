@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playwrite CU", cursive;
+    background: #165661;
+}
+
+.container {
+    max-width: 700px;
+    min-width: 200px;
+    margin: 50px auto 0 auto;
+    border: 2px solid rgb(0, 213, 255);
+    border-radius: 5px;
+    min-height: 600px;
+    background: linear-gradient(10deg, rgb(9, 59, 74), rgb(183, 234, 249));
+    box-shadow: 10px 5px 5px rgb(9, 59, 74);
+
+
+
+
+}
+
+.h1 {
+    padding: 50px 0;
+
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgb(0 168 219);
+
+}
+
+.content {}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.in {
+    font-family: "Playwrite CU", cursive;
+    border: 1px solid #00a2ff;
+    border-radius: 5px;
+    min-width: 500px;
+    min-height: 100px;
+    font-size: 30px;
+    box-shadow: 10px 5px 5px rgb(9, 59, 74);
+
+}
+
+::placeholder {
+    color: #808080;
+
+}
+
+.glow-on-hover {
+    margin-top: 50px;
+}
+
+.tasks {
+    border: 2px solid black;
+    max-width: 500px;
+    min-height: 100px;
+    margin: 50px auto;
+    background: white;
+    border: 1px solid #00a2ff;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(9, 59, 74);
+    font-size: 30px;
+    color: #808080;
+
+}
+.btnDel{
+    margin: 20px;
+	width: 100px;
+	border: 2px solid #000;
+	cursor: pointer;
+	border-radius: 3px;
+    box-shadow: 10px 5px 5px rgb(9, 59, 74);
+	margin-left: 10px;
+	color: #000;
+	font-style: italic;
+	font-size: 20px;
+	padding: 3px;
+}
+ol{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+
+}
+li{    
+}
+.task{
+    margin-left: 50px;
+    font-size: 30px;
+    text-shadow: rgb(9, 59, 74) 1px 0 10px;
+}
+
+
+/* кнопка */
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* ---------------------------------- */
